@@ -4,85 +4,89 @@
     box-sizing: border-box;
 }
 
-#rodape{
-    padding: 10px;
-    background-color: #3A0CA3 ;
-    height: 100%;
+#rodape {
+    padding: 40px 80px; 
+    background-color: #3A0CA3; 
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif; 
     display: flex;
-    align-items: center;
-   justify-content: space-between;
-   flex-grow: 1;
-   box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 30px; 
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); 
+    text-wrap: wrap; 
 }
 
-#logo{
-    margin: 50px;
+/* ------------------ SEÇÃO LOGO ------------------ */
+
+#logo img {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0; 
 }
 
-#menu_lista li{
+/* ------------------ SEÇÃO INSTITUCIONAL (Menu) ------------------ */
+
+#menu_lista {
+    padding: 0; 
+    margin: 0; 
+}
+
+#menu_lista li {
     list-style: none;
-
+    margin-bottom: 5px; 
 }
 
-#titulo_institucional{
-    gap: 20px;
-    margin-top: 15px 0;
-    margin: 10px;
-    text-align: start center;
+#menu_lista a {
+    color: inherit; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
 }
 
-#redes_sociais{
-    display: grid;
-        
+#menu_lista a:hover {
+    text-decoration: underline; 
+    color: #dedede; 
 }
 
-#titulo_acompanhe{
-    margin-inline-end: 30px;
-    padding: 10px;
+/* ------------------ ESTILO DOS TÍTULOS ------------------ */
+
+nav h2, 
+#redes_sociais h2 {
+    font-size: 1em; 
+    margin-bottom: 15px; 
+    font-weight: bold;
+    text-transform: uppercase; /* Garante que o texto fique todo em maiúsculas */
+    letter-spacing: 1px; /* Adiciona um pouco de espaçamento entre letras */
 }
 
+/* ------------------ SEÇÃO REDES SOCIAIS ------------------ */
 
-
-#instagram{
-    
-    padding: 12px;
-    border-radius: 5px;
-    border: none;
-    width: 300px;
-    transition:  0.6s ease;
-    color: white;
-    background-color: #3A0CA3;
+#redes_sociais {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
-#whatsapp{
-    padding: 12px;
-    border-radius: 5px;
-    border: none;
-    transition:  0.6s ease;
-    color: white;
-    background-color: #3A0CA3;
+#menus_redes {
+    display: flex;
+    gap: 15px; 
 }
 
-#email{
-    padding: 12px;
-    border-radius: 5px;
-    border: none;
-    width: 300px;
-    transition:  0.6s ease;
-    color: white;
-    background-color: #3A0CA3;
+/* ------------------ ESTILOS DE ÍCONES (Links) ------------------ */
+
+#menus_redes a { 
+    margin-top: center;
+    margin-left: 4px;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    background-color: transparent; 
+    font-size: 1.5em; 
+    transition: color 0.3s ease;
 }
 
-#instagram:hover{
-       background-color: #34495e;
-}
-
-#whatsapp:hover{
-     background-color: #34495e;
-}
-
-#email:hover{
-     background-color: #34495e;
+#menus_redes a:hover {
+    background-color: transparent; /* Mantém o fundo transparente */
+    color: #dedede; /* Mudar apenas a cor do ícone no hover */
 }
